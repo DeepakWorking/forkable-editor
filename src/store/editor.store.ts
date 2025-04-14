@@ -12,7 +12,6 @@ class EditorStore {
   currentVersionId: string = '';
   currentVersionIndex: number = 0;
   pendingSteps: Step[] = [];
-  history: string[] = [];
 
   constructor() {
     makeAutoObservable(this);
@@ -58,7 +57,7 @@ class EditorStore {
     const newVersion: TVersion = {
       id: uuidv4(),
       steps: [...this.pendingSteps],
-      label: `v${versionNumber}`,
+      label: `V${versionNumber}`,
       timestamp: Date.now(),
       parentVersionId: this.currentVersionId,
     };
@@ -70,7 +69,6 @@ class EditorStore {
       this.currentVersionId = newVersion.id;
       this.currentVersionIndex = this.currentBranch!.versionIds.length - 1;
       this.pendingSteps = [];
-      this.history.push(`Created version: ${newVersion.label}`);
     });
 
     console.log('Version created:', newVersion);
@@ -100,7 +98,6 @@ class EditorStore {
       this.currentBranchId = newBranch.id;
       this.currentVersionId = versionId;
       this.currentVersionIndex = 0;
-      this.history.push(`Created branch: ${newBranch.name}`);
     });
 
     console.log('Branch created:', newBranch);
@@ -116,7 +113,6 @@ class EditorStore {
       this.currentBranchId = branch.id;
       this.currentVersionId = branch.headVersionId;
       this.currentVersionIndex = branch.versionIds.length - 1;
-      this.history.push(`Switched to branch: ${branch.name}`);
     });
   }
 
@@ -133,9 +129,6 @@ class EditorStore {
     runInAction(() => {
       this.currentVersionId = versionId;
       this.currentVersionIndex = index;
-      this.history.push(
-        `Navigated to version: ${this.versions[versionId].label}`
-      );
     });
   }
 }

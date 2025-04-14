@@ -4,7 +4,6 @@ import versionStore from '@/store/editor.store';
 import VersionHeader from './VersionHeader';
 import VersionList from './VersionList';
 import BranchList from './BranchList';
-import BranchTree from './BranchTree';
 
 const SideMenu = observer(() => {
   const [isCollapsed, setIsCollapsed] = useState(false);
