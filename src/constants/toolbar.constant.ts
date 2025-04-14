@@ -1,0 +1,15 @@
+export const FONT_STYLES = [
+  'Inter',
+  'Arial',
+  'Courier New',
+  'Georgia',
+  'Times New Roman',
+  'Verdana',
+  'Tahoma',
+  'Comic Sans MS',
+  'Impact',
+  'Serif',
+  'Monospace',
+  'Cursive',
+  'Fantasy',
+] as const; // Add more font styles as needed

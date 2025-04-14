@@ -1,0 +1,80 @@
+.dark {
+  color-scheme: dark;
+
+  /* Primary Text Colors */
+  --primary-text: 228 228 231; /* #e4e4e7 - Light gray for high contrast */
+  --primary-text-hover: 197 197 209; /* #c5c5d1 - Slightly darker for hover */
+
+  --secondary-text: 161 161 170; /* #a1a1aa - Medium gray for secondary text */
+  --secondary-text-hover: 140 140 150; /* #8c8c96 - Darker hover state */
+
+  --tertiary-text: 113 113 122; /* #71717a - Subtle gray for less important text */
+  --tertiary-text-hover: 98 98 106; /* #62626a - Slightly darker hover */
+
+  /* Brand Text Colors */
+  --primary-brand-text: 255 255 255; /* #ffffff - White for high contrast */
+  --primary-brand-text-hover: 217 217 227; /* #d9d9e3 - Softer hover state */
+
+  /* Background Colors */
+  --primary-bg: 18 18 20; /* #121214 - Very dark gray for primary background */
+  --primary-bg-hover: 28 28 30; /* #1c1c1e - Slightly lighter for hover */
+
+  --secondary-bg: 30 30 34; /* #1e1e22 - Slightly lighter gray */
+  --secondary-bg-hover: 40 40 46; /* #28282e - Hover state for secondary background */
+
+  --tertiary-bg: 45 45 50; /* #2d2d32 - Medium gray for tertiary background */
+  --tertiary-bg-hover: 55 55 62; /* #37373e - Hover state for tertiary background */
+
+  --highlight-bg: 36 47 56; /* #242f38 - Subtle blue-gray highlight */
+  --highlight-bg-hover: 46 57 66; /* #2e3942 - Hover state for highlight */
+
+  /* Border Colors */
+  --primary-border: 63 63 70; /* #3f3f46 - Subtle border for primary elements */
+  --primary-border-hover: 74 74 84; /* #4a4a54 - Hover state for primary border */
+
+  --secondary-border: 78 78 88; /* #4e4e58 - Slightly lighter border */
+  --secondary-border-hover: 90 90 100; /* #5a5a64 - Hover state for secondary border */
+
+  --tertiary-border: 99 99 109; /* #63636d - Light gray for tertiary border */
+  --tertiary-border-hover: 115 115 125; /* #73737d - Hover state for tertiary border */
+
+  /* Brand Colors */
+  --primary-brand: 18 161 161; /* #12a1a1 - Your brand teal */
+  --primary-brand-hover: 15 136 136; /* #0f8888 - Darker teal for hover */
+
+  --secondary-brand: 255 99 71; /* #ff6347 - Coral for secondary brand */
+  --secondary-brand-hover: 230 85 60; /* #e6553c - Darker coral for hover */
+
+  --tertiary-brand: 255 193 7; /* #ffc107 - Vibrant yellow */
+  --tertiary-brand-hover: 255 179 0; /* #ffb300 - Darker yellow for hover */
+
+  --accent-brand: 102 126 234; /* #667eea - Blue-purple gradient */
+  --accent-brand-hover: 81 103 214; /* #5167d6 - Darker hover state */
+
+  /* Shadows */
+  --shadow-1:
+    0px 1px 3px 0px rgba(0, 0, 0, 0.22), 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
+  --shadow-2:
+    0px 2px 5px 0px rgba(0, 0, 0, 0.1), 0px 3px 7px 0px rgba(0, 0, 0, 0.12);
+  --shadow-3:
+    0px 3px 8px 0px rgba(0, 0, 0, 0.12), 0px 10px 22px 0px rgba(0, 0, 0, 0.18);
+  --shadow-3-light:
+    0px 3px 7px 0px rgba(0, 0, 0, 0.08), 0px 10px 22px 0px rgba(0, 0, 0, 0.12);
+  --shadow-4:
+    0px 5px 12px 0px rgba(0, 0, 0, 0.06), 0px 15px 28px 0px rgba(0, 0, 0, 0.18);
+  --shadow-5: 0px 22px 44px 0px rgba(0, 0, 0, 0.22);
+  --shadow-brand: 3px 5px 16px 0px rgba(18, 161, 161, 0.5);
+
+  /* Additional Colors */
+  --success: 34 197 94; /* #22c55e - Modern green */
+  --success-hover: 22 163 74; /* #16a34a - Darker hover state */
+
+  --warning: 234 179 8; /* #eab308 - Modern amber */
+  --warning-hover: 202 138 4; /* #ca8a04 - Darker hover state */
+
+  --error: 239 68 68; /* #ef4444 - Modern red */
+  --error-hover: 220 38 38; /* #dc2626 - Darker hover state */
+
+  --info: 59 130 246; /* #3b82f6 - Modern blue */
+  --info-hover: 37 99 235; /* #2563eb - Darker hover state */
+}
